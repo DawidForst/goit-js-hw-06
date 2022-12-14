@@ -1,6 +1,6 @@
-const listItems = document.querySelectorAll("#categories > li.item");
-console.log("Number of categories: " + listItems.length);
-listItems.forEach((element) => {
-  console.log("Category: " + element.querySelector("h2").innerText);
-  console.log("Elements: " + element.querySelectorAll("li").length);
+const cat = document.querySelectorAll("#categories > li");
+console.log(`Number of categories: ${cat.length}`);
+cat.forEach((e) => {
+  console.log(`Category: ${e.querySelector("h2").textContent}`);
+  console.log(`Elements: ${e.querySelectorAll("li").length}`);
 });
